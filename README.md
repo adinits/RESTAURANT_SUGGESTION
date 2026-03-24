@@ -28,7 +28,7 @@ The application generates **creative restaurant names and cuisine suggestions** 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/RESTURANT_SUGGESTION.git
+git clone https://github.com/adinits/RESTURANT_SUGGESTION.git
 cd RESTURANT_SUGGESTION
 ```
 
