@@ -100,11 +100,17 @@ Cuisine: Indian Street Food
 ## 📂 Project Structure
 
 ```
-project-folder/
-│── app.py
-│── requirements.txt
+RESTURANT_SUGGESTION/
+│── src/
+│   └── restaurant_ai/
+│       ├── __init__.py
+│       ├── main.py
+│       ├── generator.py
+│
 │── .env
+│── pyproject.toml
 │── README.md
+│── .gitignore
 ```
 
 ---
