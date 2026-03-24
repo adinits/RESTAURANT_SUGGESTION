@@ -28,8 +28,8 @@ The application generates **creative restaurant names and cuisine suggestions** 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/your-username/RESTURANT_SUGGESTION.git
+cd RESTURANT_SUGGESTION
 ```
 
 2. Create a virtual environment (recommended):
