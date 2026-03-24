@@ -28,8 +28,8 @@ The application generates **creative restaurant names and cuisine suggestions** 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/adinits/RESTURANT_SUGGESTION.git
+cd RESTURANT_SUGGESTION
 ```
 
 2. Create a virtual environment (recommended):
@@ -100,11 +100,17 @@ Cuisine: Indian Street Food
 ## 📂 Project Structure
 
 ```
-project-folder/
-│── app.py
-│── requirements.txt
+RESTURANT_SUGGESTION/
+│── src/
+│   └── restaurant_ai/
+│       ├── __init__.py
+│       ├── main.py
+│       ├── generator.py
+│
 │── .env
+│── pyproject.toml
 │── README.md
+│── .gitignore
 ```
 
 ---
