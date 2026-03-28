@@ -1,0 +1,26 @@
+[project]
+name = "restaurant-suggestion-ai"
+version = "0.1.0"
+description = "AI-powered restaurant name and menu generator using Groq + LangChain + Streamlit"
+authors = [
+{ name = "Aditya Chaudhary", email = "[adityachaudharynits101@gmail.com](mailto:adityachaudharynits101@gmail.com)" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+"streamlit>=1.32.0",
+"langchain==0.1.17",
+"langchain-core>=0.1.50",
+"langchain-groq==0.1.3"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project.scripts]
+restaurant-app = "src.resturant_ai.main:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

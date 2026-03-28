@@ -1,58 +1,54 @@
 # 🍽️ AI Restaurant Name & Cuisine Suggester
 
-This is my first AI-based project built from scratch using Python.
-The application generates **creative restaurant names and cuisine suggestions** based on user input using the OpenAI API.
+An AI-powered Streamlit application that generates **creative restaurant names and menu items** using Groq + LangChain.
 
 ---
 
 ## 🚀 Features
 
-* Generate unique and creative restaurant names
-* Suggest relevant cuisines based on user ideas
-* AI-powered recommendations using OpenAI API
-* Simple and beginner-friendly Python implementation
-* Environment variable support for secure API key usage
+* Generate unique restaurant names based on cuisine
+* Automatically generate menu items
+* Built using modern LangChain (LCEL)
+* Interactive UI with Streamlit
 
 ---
 
 ## 🛠️ Tech Stack
 
-* Language: Python
-* Libraries: OpenAI, dotenv
-* Tools: VS Code, Git
+* Python
+* Streamlit
+* LangChain
+* Groq API
 
 ---
 
 ## 📦 Installation
 
-1. Clone the repository:
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/adinits/RESTURANT_SUGGESTION.git
 cd RESTURANT_SUGGESTION
 ```
 
-2. Create a virtual environment (recommended):
+---
+
+### 2. Create virtual environment
 
 ```bash
-python -m venv venv
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 
-Activate it:
-
-* Windows:
+Windows:
 
 ```bash
-venv\Scripts\activate
+.venv\Scripts\activate
 ```
 
-* Mac/Linux:
+---
 
-```bash
-source venv/bin/activate
-```
-
-3. Install dependencies:
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
@@ -62,37 +58,49 @@ pip install -r requirements.txt
 
 ## 🔑 API Key Setup
 
-1. Get your API key from OpenAI
-2. Create a `.env` file in the root directory
-3. Add your API key:
+1. Get your Groq API key:
+   https://console.groq.com
+
+2. Create file or Use Existing file secret_key_example.py:
 
 ```
-OPENAI_API_KEY=your_api_key_here
+src/restaurant_ai/secret_key.py
+```
+```
+Rename secret_key_example.py to secret_key.py and add your API key
 ```
 
-⚠️ Never commit your `.env` file to GitHub.
+3. Add:
+
+```python
+key_groq = "your_groq_api_key_here"
+```
+
+⚠️ Important:
+
+* Do NOT commit this file
+* Add to `.gitignore`
 
 ---
 
-## ▶️ Usage
-
-Run the application:
+## ▶️ Run the Application
 
 ```bash
-python app.py
+streamlit run /workspaces/RESTURANT_SUGGESTION/src/restaurant_ai/main.py
 ```
 
-Example input:
+OR (recommended portable version):
+
+```bash
+streamlit run src/restaurant_ai/main.py
+```
+
+---
+
+## 🌐 Open in browser
 
 ```
-Enter a theme: Indian street food
-```
-
-Example output:
-
-```
-Restaurant Name: Spice Junction
-Cuisine: Indian Street Food
+http://localhost:8501
 ```
 
 ---
@@ -106,34 +114,33 @@ RESTURANT_SUGGESTION/
 │       ├── __init__.py
 │       ├── main.py
 │       ├── generator.py
+│       ├── secret_key.py  (not committed)
 │
-│── .env
+│── .venv/
+│── requirements.txt
 │── pyproject.toml
 │── README.md
-│── .gitignore
 ```
 
 ---
 
-## 🌱 Future Improvements
+## ⚠️ Notes
 
-* Add a web interface using Flask or FastAPI
-* Improve prompt engineering for better results
-* Add multiple suggestions instead of one
-* Deploy the project online
+* Uses **modern LangChain (no deprecated LLMChain)**
+* Uses Groq models (fast inference)
+* Ensure correct Python version (3.10+)
 
 ---
 
 ## 🙋‍♂️ Author
 
 Aditya Chaudhary
-
-* GitHub: https://github.com/adinits
+GitHub: https://github.com/adinits
 
 ---
 
 ## ⭐ Acknowledgements
 
-* OpenAI for providing the API
-* Built as part of my AI learning journey
-
+* Groq API
+* LangChain
+* Streamlit
