@@ -1,1 +1,0 @@
-key_groq = "--Hey, please don't forget put your secret key here and rename this file to 'secret_key' --"

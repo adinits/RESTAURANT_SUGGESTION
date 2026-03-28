@@ -1,10 +1,10 @@
-import restaurant_ai.secret_key_example as secret_key_example
+import secret_key 
 from langchain_groq import ChatGroq
 from langchain_core.prompts import PromptTemplate 
 from langchain.chains import LLMChain              
 from langchain.chains.sequential import SequentialChain 
 
-api_key = secret_key_example.key_groq
+api_key = secret_key.key_groq
 
 llm = ChatGroq(                       
     temperature=0.6,
