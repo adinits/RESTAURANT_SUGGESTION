@@ -61,7 +61,7 @@ pip install -r requirements.txt
 1. Get your Groq API key:
    https://console.groq.com
 
-2. Create file or Use Existing file secret_key_example.py:
+2. Create file or Use Existing file secret_key_example.py by renaming it to secret_key.py:
 
 ```
 src/restaurant_ai/secret_key.py
