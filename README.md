@@ -27,8 +27,8 @@ An AI-powered Streamlit application that generates **creative restaurant names a
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/adinits/RESTURANT_SUGGESTION.git
-cd RESTURANT_SUGGESTION
+git clone https://github.com/adinits/RESTAURANT_SUGGESTION.git
+cd RESTAURANT_SUGGESTION
 ```
 
 ---
@@ -86,7 +86,7 @@ key_groq = "your_groq_api_key_here"
 ## ▶️ Run the Application
 
 ```bash
-streamlit run /workspaces/RESTURANT_SUGGESTION/src/restaurant_ai/main.py
+streamlit run /workspaces/RESTAURANT_SUGGESTION/src/restaurant_ai/main.py
 ```
 
 OR (recommended portable version):
@@ -108,7 +108,7 @@ http://localhost:8501
 ## 📂 Project Structure
 
 ```
-RESTURANT_SUGGESTION/
+RESTAURANT_SUGGESTION/
 │── src/
 │   └── restaurant_ai/
 │       ├── __init__.py
