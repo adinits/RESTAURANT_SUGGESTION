@@ -66,9 +66,9 @@ pip install -r requirements.txt
 ```
 src/restaurant_ai/secret_key.py
 ```
-```
-Rename secret_key_example.py to secret_key.py and add your API key
-```
+
+- Rename secret_key_example.py to secret_key.py and add your API key
+
 
 3. Add:
 
