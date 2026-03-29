@@ -120,6 +120,7 @@ RESTURANT_SUGGESTION/
 │── requirements.txt
 │── pyproject.toml
 │── README.md
+|── .gitignore
 ```
 
 ---
